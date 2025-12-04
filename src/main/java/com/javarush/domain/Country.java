@@ -18,17 +18,20 @@ public class Country {
     @Column(name = "id")
     private Integer id;
 
+    @Column
     private String code;
 
     @Column(name = "code_2")
     private String alternativeCode;
 
+    @Column
     private String name;
 
     @Column(name = "continent")
     @Enumerated(EnumType.ORDINAL)
     private Continent continent;
 
+    @Column
     private String region;
 
     @Column(name = "surface_area")
@@ -37,6 +40,7 @@ public class Country {
     @Column(name = "indep_year")
     private Short independenceYear;
 
+    @Column
     private Integer population;
 
     @Column(name = "life_expectancy")

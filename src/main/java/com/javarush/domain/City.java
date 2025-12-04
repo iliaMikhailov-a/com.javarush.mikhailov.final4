@@ -14,14 +14,17 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column
     private String name;
 
     @ManyToOne
     @JoinColumn(name = "country_id")
     private Country country;
 
+    @Column
     private String district;
 
+    @Column
     private Integer population;
 
     public Integer getId() {
